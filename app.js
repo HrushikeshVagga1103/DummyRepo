@@ -46,6 +46,8 @@ app.get('/check',async (req, res) => {
     res.status(200).send("Health Check Ok !!!")
 })
 
+
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
