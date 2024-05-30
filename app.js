@@ -47,6 +47,10 @@ app.get('/check',async (req, res) => {
     res.status(200).send("Health Check Ok Hrushikesh Vagga!!!!")
 })
 
+app.get('/',async (req, res) => {
+  res.status(200).send("Home Route Hrushi !!!")
+})
+
 
 
 app.listen(port, () => {
