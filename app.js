@@ -6,7 +6,7 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
-const port = 8080;
+const port = 3000;
 
 // Configure multer for file uploads
 const upload = multer({ dest: 'uploads/' });
@@ -44,7 +44,7 @@ app.post('/upload', upload.single('file'), async (req, res) => {
 
 
 app.get('/check',async (req, res) => {
-    res.status(200).send("Health Check Ok Hrushikesh Vagga!!!!")
+    res.status(200).send("Health Check Ok Hrushikesh Vagga 123!!!!")
 })
 
 app.get('/',async (req, res) => {
